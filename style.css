@@ -30,8 +30,6 @@ input, textarea, select {
     margin: 5px 0px;
     padding: 5px;
 }
-input, textarea {
-}
 .input-field {
     width: 400px;
 }
