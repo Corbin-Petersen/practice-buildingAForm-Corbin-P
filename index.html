@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice: Building a Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>PRACTICE: BUILDING A FORM</h1>
+        <h2>HTML & CSS 5</h2>
+    </header>
+    <main>
+        <form action="/submit" method="post">
+            <h3>FEEDBACK FORM</h3>
+            <fieldset>
+                <legend><strong>PERSONAL INFORMATION</strong></legend>
+                <label for="name">Full Name:</label>
+                <input type="text" class="input-field" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" class="input-field" id="email" name="email" placeholder="example@example.com" required><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"><br>           
+                <label for="password">Password:</label>
+                <input type="password" class="input-field" id="password" name="password" required><br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>FEEDBACK</strong></legend>
+                <label for="category">Choose a category: &nbsp</label>
+                <select id="category" name="category">
+                    <option value="website">Website Issue</option>
+                    <option value="question">Question</option>
+                    <option value="suggestion">Suggestions</option>
+                    <option value="other" selected>Other</option>
+                </select>
+                <p class="form-label">Preferred Contact Method:</p>
+                <input type="radio" id="email-contact" name="preferred-contact" value="Email" checked>
+                <label for="email-contact">&nbsp Email</label><br>
+                <input type="radio" id="phone-contact" name="preferred-contact" value="Phone">
+                <label for="phone-contact">&nbsp Phone Call</label><br>
+                <input type="radio" id="text-contact" name="preferred-contact" value="Text">
+                <label for="phone-contact">&nbsp Text Message</label><br>
+                <p class="form-label">Additional Features of Interest:</p>
+                <input type="checkbox" id="music-styles" name="addl-interests" value="Music Styles">
+                <label for="music-styles">&nbsp Music Styles</label><br>
+                <input type="checkbox" id="games" name="addl-interests" value="Games">
+                <label for="games">&nbsp Games</label><br>
+                <input type="checkbox" id="movies" name="addl-interests" value="Movies">
+                <label for="movies">&nbsp Movies</label><br>
+                <p class="form-label">Additional Comments:</p>
+                <textarea name="comments" rows="5" cols="50"></textarea><br>
+                <input type="submit" value="SUBMIT" class="submit">
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    max-width: 75vw;
+    min-width: 1200px;
+    margin: auto;
+    background-color: rgb(242, 242, 242);
+}
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+form {
+    width: 40vw;
+    min-width: 600px;
+    margin: auto;
+}
+fieldset {
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+input, textarea, select {
+    font-size: medium;
+    font-weight: 200;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 4px;
+    margin: 5px 0px;
+    padding: 5px;
+}
+input, textarea {
+}
+.input-field {
+    width: 400px;
+}
+.form-label {
+    font-size: 16px;
+    margin: 15px 0px 5px 0px;
+}
+.submit {
+    padding: 5px 20px;
+    border: 2px solid rgb(219, 219, 219);
+    font-weight: 500;
+}
+.submit:hover {
+    border: 2px solid rgb(186, 186, 186);
+    background-color: white;
+}
